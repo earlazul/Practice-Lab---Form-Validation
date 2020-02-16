@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event-Form</title>
+    <link rel = "stylesheet" type = "text/css" href = "practiceLab1.css" />
+    <script src="validateMyForm.js"></script>
+</head>
+<body>
+    <form> 
+        <fieldset>
+            <legend>CREATE A NEW EVENT</legend>
+            <label>Event Type:</label>
+            <select>
+                <option value ="Concert">Concert</option>
+                <option value ="Conference">Conference</option>
+                <option value ="Meeting">Meeting</option>
+                <option value ="Gathering">Gathering</option>
+                <option value ="Party">Party</option>
+                <option value ="Wedding">Wedding</option>
+                <option value ="Vacation">Vacation</option>
+                <option value ="Tournament">Tournament</option>
+            </select><br><br>
+            <label>Event Title: <input id = "evt" type="text"></label><br><br>
+            <label>Event Dates: <input id = "evd" type="date"></label> to
+            <label><input id = "evd1" type="date"> <br><br>
+            <label>Posting Dates: <input id = "pd" type="date"></label><br><br><br>
+            <label><input type="checkbox">Is Registration Required? </label><br><br>
+            <label><input type="checkbox">Is this event associated with any Family Programs? </label><br><br>
+            <label><input type="checkbox">Upon Registration Completion, Are Users to Receive an Auto Generated Email? </label><br><br>
+            <label><input type="checkbox">Is There a Point of Contact? </label><br><br>
+            <label><input type="checkbox">Is There a Hosting Command Point of Contact? </label><br><br>
+            <button type = "submit" onclick="formValidation()">Save</button>
+            <button type = "reset" onclick="cancel()">Cancel</button>
+        </fieldset>
+    </form>
+</body>
+</html>

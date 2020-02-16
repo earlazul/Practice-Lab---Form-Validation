@@ -1,0 +1,14 @@
+body{
+    margin: 5%;
+    border: 1px solid black;
+    background-color: #7fffd4;
+}
+input{
+    border:5px solid #bdb76b;
+}
+input:focus{
+    background-color: #a9a9a9;
+}
+fieldset{
+    margin-bottom: 15%;
+}
